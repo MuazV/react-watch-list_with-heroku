@@ -1,0 +1,15 @@
+import React from 'react'
+import AddTutorial from '../components/AddTutorials'
+import TutorialList from '../components/TutorialList';
+
+const Home = () => {
+    
+  return (
+    <div>
+        <AddTutorial/>
+        <TutorialList/>
+    </div>
+  )
+}
+
+export default Home;
