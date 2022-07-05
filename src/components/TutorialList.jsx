@@ -3,7 +3,7 @@ import { AiFillDelete } from 'react-icons/ai';
 import EditTutorial from './EditTutorial';
 
 
-const TutorialList = ({ tutorials }) => {
+const TutorialList = ({ tutorials, deleteTutorial }) => {
   return (
     <div className="container mt-4">
       <table className="table table-striped">
@@ -36,7 +36,7 @@ const TutorialList = ({ tutorials }) => {
                   <AiFillDelete
                     size={22}
                     className="text-danger cursor-pointer"
-                    // onClick={() => deleteTutorial(id)}
+                    onClick={() => deleteTutorial(id)}
                   />
                 </td>
               </tr>
